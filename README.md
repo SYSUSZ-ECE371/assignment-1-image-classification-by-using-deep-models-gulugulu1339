@@ -1,2 +1,27 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/VkJVVOAn)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19513693&assignment_repo_type=AssignmentRepo)
+
+# 神经网络第一次作业
+
+本作业旨在通过不同的策略（包括不同的学习率和数据增强技术）来训练和评估几种深度神经网络用于图像识别的结果，并主要分析ResNet101模型。目的是分析模型在训练和验证准确率以及损失方面的表现。
+
+## 目录
+
+### EX1：
+- `ex1.txt`：记录ResNet101在固定增强，冻结若干网络参数以及混合学习率策略下微调训练四十轮的运行结果，最终其识别准确率可达到96%。包含模型训练日志的文本文件，记录了每个epoch的学习率、训练损失和验证准确率。
+- `resnet101_flower.py`：配置文件，用于配置代码运行的各种参数，包括模型指定，数据集加载，以及学习策略。
+- `imagenet` 文件夹：包含以下脚本和数据集：
+  - `merge.py`：用于拆分数据集。
+  - `build_dict.py`：生成字典。
+  - `build_dataset.py`：生成训练集和验证集。
+  - `build_txt.py`：生成类文件和训练，验证文档。
+- `flower_dataset`：拆分后的数据集。
+- `epoch_40.pth`：最终运行的模型文件，识别准确率高达96%。
+
+### EX2：
+- `22308133罗沛文.pdf`：最终撰写的研究报告。
+- `EX2.txt`：第二题的运行结果。
+- `best_model.pth`：保存的最优模型。
+- `main.py`：修改后的main函数。
+
+## 环境设置
+
+根据官方说明文档，Python版本需大于3.8。我的个人包安装目录已经导出到 `requirements.txt` 文件中
